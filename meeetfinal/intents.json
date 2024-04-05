@@ -1,0 +1,228 @@
+{
+   "intents": [
+     {
+       "tag": "greeting",
+       "patterns": [
+         "Hi",
+         "Hello",
+         "Good day",
+         "What's up",
+         "Hey"
+       ],
+       "responses": [
+         "Hello! How can I assist you with trading today?",
+         "Hi there, ready to dive into the market?",
+         "Good to see you! How can I help with your trading queries?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "market_status",
+       "patterns": [
+         "How is the market doing?",
+         "Market status",
+         "Is the market up or down today?",
+         "What's the market sentiment?",
+         "Current market trends"
+       ],
+       "responses": [
+         "The market is quite volatile today, would you like a detailed analysis?",
+         "Today, the market is showing an upward trend. Would you like to explore some stocks?",
+         "The market is down today, it might be a good opportunity to buy. Interested in recommendations?"
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "stock_recommendations",
+       "patterns": [
+         "Any stock recommendations?",
+         "Which stocks are good to buy today?",
+         "Suggest some stocks for investment",
+         "What are the hot picks for today?",
+         "Recommend some stocks"
+       ],
+       "responses": [
+         "Based on today's analysis, I recommend looking into tech and renewable energy sectors.",
+         "Considering the market trends, investing in healthcare and consumer goods might be a good idea today.",
+         "How about exploring opportunities in the fintech and e-commerce sectors? They're showing promising growth."
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "trading_tips",
+       "patterns": [
+         "Any trading tips?",
+         "How can I improve my trading?",
+         "Tips for a beginner trader",
+         "What should I know before trading?",
+         "Give me some trading advice"
+       ],
+       "responses": [
+         "Always stay updated with the latest market news and trends.",
+         "Diversify your portfolio to spread the risk.",
+         "Set clear goals and limits for your trades to manage risks effectively."
+       ],
+       "context_set": ""
+     },
+     {
+       "tag": "goodbye",
+       "patterns": [
+         "Bye",
+         "See you later",
+         "Goodbye",
+         "I'm done for today",
+         "That's all, thank you"
+       ],
+       "responses": [
+         "Goodbye! Remember, the market waits for no one. See you soon.",
+         "Take care! Let's catch up on those stocks later.",
+         "Happy trading! Feel free to return if you have more questions."
+       ],
+       "context_set": ""
+     },
+     {
+      "tag": "buy_sell_timing",
+      "patterns": [
+        "What is the right time to buy or sell stock?",
+        "When should I buy stock?",
+        "When should I sell stock?"
+      ],
+      "responses": [
+        "The right time to buy a stock is typically when it's undervalued, and to sell when it's overvalued or to rebalance your portfolio. Analyzing the company's fundamentals can provide insights."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "start_investing",
+      "patterns": [
+        "What is the right time to begin investing in the stock market?",
+        "When should I start investing?",
+        "Is it too late to start investing?"
+      ],
+      "responses": [
+        "The best time to start investing is as soon as you have financial stability, including an emergency fund and no high-interest debt. Time in the market is more critical than timing the market."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stop_loss",
+      "patterns": [
+        "What is a stop loss?",
+        "How does a stop loss work?",
+        "Can you explain stop loss orders?"
+      ],
+      "responses": [
+        "A stop loss is an order to buy or sell a stock once it reaches a certain price, designed to limit an investor's loss on a security position."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "investment_percentage",
+      "patterns": [
+        "How much percentage of income should we invest in the stock market?",
+        "What portion of my income should go to investments?",
+        "How much of my salary should I invest?"
+      ],
+      "responses": [
+        "The percentage of income to invest can vary, but a common rule is the 50/30/20 rule, with 20% towards savings and investments, adjusted based on individual circumstances."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "choosing_stocks",
+      "patterns": [
+        "How do I choose which stocks to invest in?",
+        "What should I look for in a stock before investing?",
+        "Choosing stocks to invest in"
+      ],
+      "responses": [
+        "Choosing stocks involves researching the company's financial health, business model, industry position, and growth potential, among other factors."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stocks_vs_mutual_funds",
+      "patterns": [
+        "Is it better to invest in individual stocks or mutual funds?",
+        "Should I buy stocks or mutual funds?",
+        "Stocks or mutual funds, which is better?"
+      ],
+      "responses": [
+        "Individual stocks offer higher potential returns but require more knowledge to manage. Mutual funds provide diversification and are managed by professionals, making them less risky."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "investment_risks",
+      "patterns": [
+        "What are the risks of investing in the stock market?",
+        "Can you tell me about stock market risks?",
+        "Investing risks"
+      ],
+      "responses": [
+        "The stock market involves risks like market risk, liquidity risk, and inflation risk, affecting the value of investments and their purchasing power."
+      ],
+      "context_set": ""
+    }, {
+      "tag": "what_are_stocks",
+      "patterns": [
+        "What are stocks?",
+        "How do stocks differ from bonds or mutual funds?",
+        "Difference between stocks and other investments",
+        "Explain what stocks are",
+        "Stocks vs bonds vs mutual funds",
+        "What does owning a stock mean?"
+      ],
+      "responses": [
+        "Stocks represent ownership shares in a company, giving shareholders a claim on the company's earnings and assets. Unlike bonds, which are debt investments where you loan money to an issuer in exchange for periodic interest payments and the return of the bond's face value at maturity, stocks potentially offer higher returns but with higher risk. Mutual funds pool money from many investors to buy a diversified portfolio of stocks, bonds, or other securities, offering diversification and professional management."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "opening_brokerage_account",
+      "patterns": [
+        "How do I open a brokerage account?",
+        "What should I consider when choosing a brokerage platform?",
+        "Choosing a brokerage platform",
+        "Steps to open a brokerage account",
+        "Factors to consider in a brokerage",
+        "How to start trading with a brokerage account?"
+      ],
+      "responses": [
+        "To open a brokerage account, you'll need to choose a brokerage firm, complete an application, and deposit funds. Consider factors like fees, available investments, trading platforms, research and tools, and customer service when choosing a brokerage. It's also important to decide between a traditional brokerage and a robo-advisor based on your investment style and needs."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "stock_price_vs_value",
+      "patterns": [
+        "What is the difference between a stock's price and its value?",
+        "How can I tell if a stock is undervalued or overvalued?",
+        "Determining if a stock is undervalued",
+        "Stock price compared to its value",
+        "How to evaluate a stock's worth?",
+        "Understanding stock valuation"
+      ],
+      "responses": [
+        "A stock's price is what investors are currently willing to pay for it in the market, while its value is what the stock is actually worth based on its earnings, assets, and growth prospects. To determine if a stock is undervalued or overvalued, investors often look at valuation metrics like the price-to-earnings (P/E) ratio, comparing it to similar companies and the market overall. Fundamental analysis, including reviewing financial statements and assessing the company's competitive position, can also provide insights."
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "starting_investment_amount",
+      "patterns": [
+        "How much money do I need to start investing in the stock market?",
+        "Investing with a limited budget",
+        "Strategies for investing with a limited budget",
+        "Minimum amount to start investing",
+        "Can I invest with a small amount of money?",
+        "Starting investment for beginners"
+      ],
+      "responses": [
+        "You can start investing in the stock market with a relatively small amount of money, thanks to options like discount brokerages and fractional shares. The key is to begin with what you can afford and to invest consistently over time. Consider starting with a diversified portfolio of low-cost index funds or ETFs to spread risk, especially if your budget is limited."
+      ],
+      "context_set": ""
+    }
+    
+   ]
+ }

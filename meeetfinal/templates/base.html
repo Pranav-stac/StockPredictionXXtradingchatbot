@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>TradeMaster - Online Trading Platform</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-logo">
+                <img src="static/images/trading-logo.png" alt="TradeMaster Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Market Summary</a></li>
+                    <li><a href="#">Trading Tools</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to TradeMaster</h1>
+                <p>Empowering your trading journey.</p>
+                <a href="index/" class="cta-button">Start Trading</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="market-summary-section">
+        <div class="container">
+            <div class="market-summary-content">
+                <h2>Market Summary</h2>
+                <p>Get the latest updates on market trends and movements. Our Market Summary gives you a quick snapshot of major indices performance, including the Dow Jones Industrial Average, NASDAQ, and S&P 500. Stay informed with real-time data and insights to make informed trading decisions.</p>
+                <ul>
+                    <li>Dow Jones Industrial Average: 33,800.60 <span class="up">+0.76%</span></li>
+                    <li>NASDAQ Composite: 13,900.19 <span class="down">-0.28%</span></li>
+                    <li>S&P 500: 4,155.38 <span class="up">+0.58%</span></li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="trading-tools-section">
+        <div class="container">
+            <div class="trading-tools-content">
+                <h2>Trading Tools</h2>
+                <p>Empower your trading with our advanced trading tools. From real-time charts to risk management features, we provide everything you need to trade more effectively and confidently.</p>
+                <ul>
+                    <li><strong>Advanced Charting Tools:</strong> Access comprehensive charting options with over 50 technical indicators to analyze market trends and price movements.</li>
+                    <li><strong>Real-time Market Data:</strong> Stay ahead with real-time quotes, news, and market data at your fingertips.</li>
+                    <li><strong>Risk Management Features:</strong> Utilize our built-in tools to manage your trading risk, including stop-loss orders and customizable alerts.</li>
+                    <li><strong>Educational Resources:</strong> Whether you're a beginner or an experienced trader, our educational resources can help you improve your trading skills.</li>
+                </ul>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="chatbox">
+                <div class="chatbox__support">
+                    <div class="chatbox__header">
+                        <div class="chatbox__image--header">
+                            <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="Chat Support Icon">
+                        </div>
+                        <div class="chatbox__content--header">
+                            <h4 class="chatbox__heading--header">Chat Support</h4>
+                            <p class="chatbox__description--header">Hi. How can I help you with your trading needs?</p>
+                        </div>
+                    </div>
+                    <div class="chatbox__messages">
+                        <!-- Messages go here -->
+                    </div>
+                    <div class="chatbox__footer">
+                        <input type="text" placeholder="Write a message...">
+                        <button class="chatbox__send--footer send__button">Send</button>
+                    </div>
+                </div>
+                <div class="chatbox__button">
+                    <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" alt="Chatbox Icon"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

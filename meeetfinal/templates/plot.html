@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plotly Chart</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<style>
+    body {
+        padding-top: 20px;
+        background-image: url('/static/images/stock.jpeg');
+        background-size: cover; /* Cover the entire page */
+        background-position: center; 
+    }
+    .form-container {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
+    }
+    .text-center{
+        color: aliceblue;
+    }
+</style>
+<body>
+
+<div id="plot"></div>
+
+<script>
+    var graphs = {{graphJSON | safe}};
+    Plotly.newPlot('plot', graphs.data, graphs.layout);
+</script>
+
+</body>
+</html>

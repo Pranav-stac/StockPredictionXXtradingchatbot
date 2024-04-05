@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+            background-image: url('/static/images/stock.jpeg');
+            background-size: cover; /* Cover the entire page */
+            background-position: center; 
+        }
+        .form-container {
+            margin: auto;
+            width: 50%;
+            padding: 10px;
+        }
+        .text-center{
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Stock Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container form-container">
+        <h2 class="text-center">Enter Number of Days to Predict Stock</h2>
+        <form id="predictForm">
+            <div class="form-group">
+                <label for="userInput">Number of Days:</label>
+                <input type="number" class="form-control" name="userInput" id="userInput" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script>
+    document.getElementById('predictForm').onsubmit = function(e) {
+        e.preventDefault(); // Prevent the default form submission
+        var userInput = document.getElementById('userInput').value;
+        window.location.href = '/predict/userInput/' + userInput; // Redirect to the desired URL
+    };
+    </script>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
